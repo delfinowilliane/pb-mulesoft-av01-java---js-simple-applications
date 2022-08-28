@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class CalcularBonus {
+	public static Scanner scanner = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+	 
+		System.out.println("CADASTRO DE FUNCIONÁRIOS");
+		
+		System.out.println("Quantidade de funcionários: ");
+		int validado = scanner.nextInt();
+		
+		Funcionarios[] funcionario = new Funcionarios[validado];
+
+		for(int i=0; i<validado; i++) {
+			
+			funcionario[validado] = new Funcionarios();
+			
+			System.out.println("Nome: ");
+			String nome = scanner.nextLine();
+			funcionario[i].setNome(nome);
+			
+			System.out.println("Salario: ");
+			double salario = scanner.nextInt();
+			funcionario[i].setSalario(salario);
+		}
+		
+		System.out.println("Resultado do calculo do bônus: ");
+		
+		for (int i=0; i<funcionario.length; i++) {
+			
+			System.out.println("Funcionário: " + funcionario[validado].getNome());
+			System.out.println("Funcionário: " + funcionario[validado].getSalario());
+			funcionario[validado].bonificacao();
+			System.out.println();
+		
+		}
+	
+	}
+}

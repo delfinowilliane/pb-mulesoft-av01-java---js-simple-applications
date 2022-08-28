@@ -1,0 +1,34 @@
+import java.time.LocalTime;
+import java.util.Scanner;
+
+public class ValidarLogin {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String usuarioValidado = "fulano"; 
+		String senhaValidada = "semsenha123";
+		
+		int horario = LocalTime.now().getHour();
+		
+		System.out.print("Usuário: ");
+		String usuario = scanner.nextLine().toLowerCase();
+		System.out.println("Senha: ");
+		String senha = scanner.nextLine().toLowerCase();
+		
+		if (usuario != usuarioValidado || senha != senhaValidada) {
+			System.out.println("Usuário e/ou senha incorretos.");
+		} else {
+			
+			String[] valido = new String[4];
+			
+			valido[0] = "Bom dia, você se logou ao nosso sistema." ;
+			valido[1] = "Boa tarde, você se logou ao nosso sistema." ;
+			valido[2] = "Boa noite, você se logou ao nosso sistema." ;
+			valido[3] = "Boa madrugada, você se logou ao nosso sistema" ;
+			
+			for()
+			
+		}
+	}
+}

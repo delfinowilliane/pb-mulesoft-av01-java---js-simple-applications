@@ -1,0 +1,36 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Quiz {
+	public static void main(String[] args) {
+		
+		//responda apenas com uma palavra ou número;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String[] questions = new String[10];
+		
+		questions[0] = "Em que ano Harry Potter nasceu?"; //1980
+		questions[1] = "Qual o formato da cicatriz que Harry tinha na testa?"; //raio
+		questions[2] = "A qual casa de Hogwarts Hermione pertencia?";//Grifinória
+		questions[3] = "Quem é o melhor amigo do Harry?";//Rony
+		questions[4] = "Quantas escadas existem em Hogwarts?"; //142
+		questions[5] = "O que é 'The Quibbler?'";// jornal
+		questions[6] = "Qual o esporte mais importante de Hogwarts?";//Quadribol
+		questions[7] = "Professor Snape é o diretor de qual casa de Hogwarts?";//Sonserina
+		questions[8] = "Qual instrumento mágico os bruxos usam para canalizar seu poder e fazer magias?";//Varinha
+		questions[9] = "Quem é o verdadeiro vilão de Harry Potter?"; //Voldemort
+		
+		for (int i = 0; i < questions.length; i++) {
+			System.out.println(questions[i]);
+		}
+	}
+}
+
+/*
+Resultado:
+Jogador: Fulano de Tal
+Acertos: 6
+Erros: 4
+
+*/

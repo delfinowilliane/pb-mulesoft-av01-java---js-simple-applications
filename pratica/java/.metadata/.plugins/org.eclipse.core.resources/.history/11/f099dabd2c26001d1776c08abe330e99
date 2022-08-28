@@ -1,0 +1,15 @@
+public class CalculoDoBonus {
+
+	private double soma;
+
+    public void registra(Funcionario f) {
+        this.soma += f.getBonificacao();
+    }
+
+    // métodos get and set
+    public double getSoma() {
+        return soma;
+    }
+		
+	}
+}

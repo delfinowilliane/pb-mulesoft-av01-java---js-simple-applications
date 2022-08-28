@@ -1,0 +1,16 @@
+import javax.print.attribute.SetOfIntegerSyntax;
+
+public class CalculoDoBonus {
+	
+	public static void main(String[] args) {
+	
+		Funcionarios fulano = new Funcionarios();
+		Funcionarios sicrano = new Funcionarios();
+		Funcionarios beltrano = new Funcionarios();
+		
+		
+		
+		
+	}
+	
+}

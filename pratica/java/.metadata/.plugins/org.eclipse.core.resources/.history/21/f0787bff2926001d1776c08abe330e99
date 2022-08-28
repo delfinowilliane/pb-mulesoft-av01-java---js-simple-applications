@@ -1,0 +1,21 @@
+
+public class CalculoDoBonus {
+	public static void main(String[] args) {
+		
+		/* 
+		
+		function calcular e se tem direito a bonificação, se:.
+		
+		if (salarioDoUsuario <= 1000 reais) { receberá 20% de bonificação }
+		
+		if (salarioDoUsuario > 1000 && salarioDoUsuario < 2000) { recebe 10% } 
+		
+		if (salarioDoUsuario > 2.000) { em vez de bonificação, o funcionário terá um desconto de 10% sobre o salário } 
+		
+		//Scanner precisa receber:
+		 
+		*/
+		
+		
+	}
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class CalculoDoBonus {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner();
+		
+		System.out.print("Quantidade de funcionários: ");
+		String quantidadeDeFuncionarios = scanner.nextLine();
+		System.out.print("Salário: ");
+		int salario = scanner.nextInt();
+		
+
+		
+		/* 
+		
+		function calcular e se tem direito a bonificação, se:.
+		
+		if (salarioDoUsuario <= 1000 reais) { receberá 20% de bonificação }
+		
+		if (salarioDoUsuario > 1000 && salarioDoUsuario < 2000) { recebe 10% } 
+		
+		if (salarioDoUsuario > 2.000) { em vez de bonificação, o funcionário terá um desconto de 10% sobre o salário } 
+		
+		//Scanner precisa receber:
+		 
+		 quantidade de funcionários que serão cadastrados
+		 armazenar em arrays as informações dos funcionarios:
+		 		 
+			 Funcionário:
+			 Salário:
+			 Bônus/Desconto:
+			 Salário Líquido:
+		
+		*/
+		
+		
+	}
+}

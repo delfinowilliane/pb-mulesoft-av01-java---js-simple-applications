@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+
+<input placeholder="Informe o troco">
+<button>Calcular</button>
+
+<script>
+
+	var centavos = [50, 25, 10, 5, 1];
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	function total() {
+		
+		var troco = (input.value * 100);
+		
+		var moeda50 = parseInt(troco/50);
+		troco = parseInt(troco%50);
+		var moeda25 = parseInt(troco/25);
+		troco = parseInt(troco%25);
+		var moeda10 = parseInt(troco/10);
+		troco = parseInt(troco%10);
+		var moeda5 = parseInt(troco/5);
+		troco = parseInt(troco%5);
+		var moeda1 = parseInt(troco/1);
+		troco = parseInt(troco%1);
+
+		var total = (moeda50+moeda25+moeda10+moeda5+moeda1);	
+
+		return total;
+
+	}
+
+	function calcula() {
+
+		document.write("Total de moedas: " + total() + "<br>");
+		
+		var troco = (input.value * 100);
+
+		document.write("Sendo: " + "<br>");
+
+		for (let moeda of centavos) {		
+			var quantidade = parseInt(troco / moeda);
+			troco = troco % moeda;
+					
+			document.write(quantidade + " de " + moeda + " centavo(s). <br>");
+		}
+
+	}
+
+    var button = document.querySelector("button");
+    button.onclick = calcula;
+
+</script>

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ContaDoSegundoGrau {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println('Informe o valor de a');
+		int a = scanner.nextInt(); scanner é dado a cada interação
+
+		System.out.println('Informe o valor de b');
+		int a = scanner.nextInt(); scanner é dado a cada interação
+
+		System.out.println('Informe o valor de c');
+		int a = scanner.nextInt(); scanner é dado a cada interação
+
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+	}
+	
+	public double
+}

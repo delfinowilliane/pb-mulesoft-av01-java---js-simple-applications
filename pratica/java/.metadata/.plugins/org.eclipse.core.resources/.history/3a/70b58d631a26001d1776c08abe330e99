@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Quiz {
+	public static void main(String[] args) {
+			
+		Scanner scanner = new Scanner(System.in);
+		
+		String[] questions = new String[10];
+		
+		questions[0] = "Em que ano Harry Potter nasceu?";
+		questions[1] = "Qual o formato da cicatriz que Harry tinha na testa?";
+		questions[2] = "A qual casa de Hogwarts Hermione pertencia?";
+		questions[3] = "Quem é o melhor amigo do Harry?";
+		questions[4] = "Quantas escadas existem em Hogwarts?";
+		questions[5] = "O que é 'The Quibbler?'";
+		questions[6] = "Qual o esporte mais importante de Hogwarts?";
+		questions[7] = "Professor Snape é o diretor de qual casa de Hogwarts?";
+		questions[8] = "Qual instrumento mágico os bruxos usam para canalizar seu poder e fazer magias?";
+		questions[9] = "Quem é o verdadeiro vilão de Harry Potter?";
+		
+		String[] answers = new String[10];
+		
+		answers[0] = "1980";
+		answers[1] = "Raio";
+		answers[2] = "Grifinória";
+		answers[3] = "Rony";
+		answers[4] = "142";
+		answers[5] = "Jornal";
+		answers[6] = "Quadribol";
+		answers[7] = "Sonserina";
+		answers[8] = "Varinha";//
+		answers[9] = "Voldemort";
+		
+		
+		System.out.println("Digite o nome do jogador: ");
+		
+		
+		int pontos = 0;
+		for (int i = 0; i < questions.length; i++) {
+			System.out.println(questions[i]);
+			
+			if (answers.equals(answers[i])) {
+				pontos++;
+			}
+		}
+	}
+}
+
+/*
+Resultado:
+Jogador: Fulano de Tal
+Acertos: 6
+Erros: 4
+
+*/

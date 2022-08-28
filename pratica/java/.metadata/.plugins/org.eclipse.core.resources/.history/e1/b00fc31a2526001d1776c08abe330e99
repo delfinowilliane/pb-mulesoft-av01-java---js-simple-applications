@@ -1,0 +1,19 @@
+import java.time.LocalTime;
+import java.util.Scanner;
+
+public class ValidarLogin {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String usuarioFictício = "fulano"; 
+		String senhaFicticia = "semsenha123";
+		
+		int horario = LocalTime.now().getHour();
+		
+		System.out.print("Usuário: ");
+		String usuario = scanner.nextLine().toLowerCase();
+		System.out.print("Senha: ");
+		String senha = scanner.nextInt().toLowerCase();
+	}
+}
